@@ -1,9 +1,8 @@
-import Item from "./components/Item";
-
+import VendingMachine from "./components/VendingMachine";
 function App() {
   return (
     <>
-      <Item />
+      <VendingMachine />
     </>
   );
 }
