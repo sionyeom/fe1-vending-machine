@@ -1,10 +1,10 @@
 import Item from "./Item";
+import { item } from "../constants/constant";
 
-const ItemContainer = () => {
-  // Create an array of values from 300 to 1100, incremented by 100
+const ItemContainer: React.FC = () => {
   const values = Array.from(
-    { length: (1100 - 300) / 100 + 1 },
-    (_, i) => 300 + i * 100
+    { length: (item.MAX_PRICE - item.MIN_PRICE) / item.PRICE_INCREMENT + 1 },
+    (_, i) => item.MIN_PRICE + i * item.PRICE_INCREMENT
   );
 
   return (

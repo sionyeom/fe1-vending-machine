@@ -1,9 +1,9 @@
-// type Props = {}
 import ItemContainer from "./ItemContainer";
 import Balance from "./Balance";
-import ButtonContainer from "./ButtonContainer";
 import LogContainer from "./LogContainer";
-const VendingMachine = () => {
+import InputContainer from "./InputContainer";
+
+const VendingMachine: React.FC = () => {
   return (
     <div className="flex justify-center">
       <div className="p-4 m-4 border">
@@ -11,10 +11,7 @@ const VendingMachine = () => {
         <ItemContainer />
       </div>
       <div className="p-4">
-        <div className="flex gap-4">
-          <input id="input" className="border text-center" type="number" />
-          <ButtonContainer />
-        </div>
+        <InputContainer />
         <LogContainer />
       </div>
     </div>
